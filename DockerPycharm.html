@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Us</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .column {
+         float: left;
+         width: 33.33%;
+         padding: 5px;
+        }
+
+    /* Clearfix (clear floats) */
+        .row::after {
+        content: "";
+        clear: both;
+        display: table;
+        }
+
+        .btn {
+        background-color: #2196F3;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        outline: none;
+        }
+
+        .dropdown {
+         position: absolute;
+         display: inline-block;
+        }
+
+        .dropdown-content {
+        display: none;
+        position: center;
+        background-color: #f1f1f1;
+        min-width: 160px;
+         z-index: 1;
+        }
+
+        .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+         text-decoration: none;
+         display: block;
+        }
+
+        .dropdown-content a:hover {background-color: #ddd}
+
+        .dropdown:hover .dropdown-content {
+        display: block;
+        }
+
+        .btn:hover, .dropdown:hover .btn {
+          background-color: #0b7dda;
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<!--Body-->
+<body>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <a class="navbar-brand" href="./index.html">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">Content</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="virtualization.html">Virtualization</a>
+                    <a class="dropdown-item" href="containerization.html">Containerization</a>
+                    <a class="dropdown-item" href="#">How do they compare?</a>
+                    <a class="dropdown-item" href="#">Setup Web Server using Docker</a>
+                    <a class="dropdown-item" href="#">Linux Commands & Docker Basic</a>
+                    <a class="dropdown-item" href="DockerPycharm.html">How to connect Docker with Pycharm</a>
+            </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="docs/aboutus.html">About Us</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<h1 class="page-header bg- text-left text-dark jumbotron" $>How to Connect Docker with Pycharm</h1>
+        <div class="container">
+            <h2 id="the-founding-of-arpa" class="text-left">Step 1: Install and Run Docker</h2>
+            <hr>
+            <p class="lead text-left">I am using Mac OS for this project so all the instructions below will be
+            Mac environment friendly. The gist of this is similar to other OS as well with few differences in terms
+            and processes which can be easily found in the Docker site. Begin by going to the <a href="https://docs.docker.com/get-docker/">Docker</a>
+                site and install the software appropriate for your operating system. </p>
+            <li>Double-click Docker.dmg to open the installer, then drag the Docker icon to the Applications folder.</li>
+            <li>Double-click Docker.app in the Applications folder to start Docker. The Docker menu in the top status
+                bar indicates that Docker Desktop is running, and accessible from a terminal.</li>
+            <figure class="text-center">
+                <img class="border rounded-left" src="images/docker.png" alt="Docker" />
+            </figure>
+            <figure class="text-center">
+                <img class="border rounded-left" src="images/menubar.png" alt="Docker" />
+            </figure>
+        </div>
+
+        <div class="container">
+            <h2 id="the-founding-of-arpa" class="text-left text-capitalize">Step 2: Setup Pycharm</h2>
+            <hr>
+            <p class="lead text-left" >Once you've successfully installed Docker, start up Pycharm and go through
+            initial configuration while making sure you are signed into your JetBrains account. </p>
+            <li>Create a Github Repository and clone it into your local directory using Get from Version Control
+            on Pycharm. Select Git and provide the CODE link from your Github repository. I used the HTTPS code to clone mine.</li>
+            <li>Once Pycharm and Git are connected, enable Docker by going to Preferences -> Build, Execution, Deployment
+            -> Docker. If the window is empty, select the + sign to add Docker and select Docker for Mac. As long as it
+            says connection successful,select 'Ok'.</li>
+            <li>Create a new file on your project called Dockerfile</li>
+            <li>Add the Dockerfile code mentioned in this website to your Docker file:
+                <a href="https://runnable.com/docker/python/dockerize-your-python-application">Dockerize with Python Application</a> </li>
+
+            <li>Create a new directory called 'src' and add a Python file called my_script.py and add the code for the
+            script from the above mentioned website.</li>
+            <li>Navigate to 'Add Configuration' and select the + button and choose Dockerfile under the Docker field.</li>
+            <li>Add 'Barcode' as the Name and image tag and hit apply. Press Ok to exit.</li>
+            <figure class="text-center">
+                <img class="border rounded-left" src="images/barcode.png" alt="Barcode" style="width:60%" />
+            </figure>
+            <li>Set up a Docker Interpreter by navigating to the bottom right of your Pycharm window and select
+            'Add Interpreter'</li>
+             <figure class="text-center">
+                <img class="border rounded-left" src="images/Interpreter.png" alt="Interpreter" style="width:60%"/>
+            </figure>
+            <li>Fill in the information as below image and hit Ok</li>
+            <figure class="text-center">
+                <img class="border rounded-left" src="images/interpreter2.png" alt="Interpreter2" style="width:60%" />
+            </figure>
+            <li>Now that everything is set, press the green Play button next to Barcode Configuration and see your code
+            run with Docker in Pycharm!</li>
+            <figure class="text-center">
+                <img class="border rounded-left" src="images/result.png" alt="Result" style="width:60%" />
+            </figure>
+        </div>
+
+
+<footer class="text-center text-white" style="background-color: #45637d;">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Iframe -->
+    <section class="">
+      <div class="row d-flex justify-content-center">
+        <div class="col-lg-6">
+          <div class="ratio ratio-16x9">
+            <iframe
+              class="shadow-1-strong rounded"
+              src="https://www.youtube.com/embed/5zua74p6vjU""
+              title="YouTube video"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section: Iframe -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 Copyright:
+    <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<br><br><br><br><br><br>
+</body>
+</html>
+
+
+
+
