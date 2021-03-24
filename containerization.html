@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>What is Containerization?</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">Content</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="virtualization.html">Virtualization</a>
+                        <a class="dropdown-item" href="containerization.html">Containerization</a>
+                        <a class="dropdown-item" href="#">How do they compare?</a>
+                        <a class="dropdown-item" href="#">Setup Web Server using Docker</a>
+                        <a class="dropdown-item" href="#">Linux Commands & Docker Basics</a>
+                        <a class="dropdown-item" href="#">How to connect Docker with Pycharm</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Page Content -->
+
+<h1 class="page-header text-center text-dark jumbotron">What is Containerization?</h1>
+
+<div class="container">
+    <div class="container">
+        <h2 id="the-need-for-an-indestructible-network" class="text-center text-capitalize">Containerization</h2>
+        <hr>
+        <div class="d-flex justify-content-center">
+            <img src="images/containerization.jpeg" class="img-fluid" alt="Responsive image" width="1000" height="250">
+        </div>
+        <br>
+        <p class="container-fluid text-justify">Containerization allows developers to create and deploy applications
+            faster and more securely. With traditional methods, code is developed in a specific computing environment
+            which, when transferred to a new location, often results in bugs and errors. For example, when a developer
+            transfers code from a desktop computer to a virtual machine (VM) or from a Linux to a Windows operating
+            system. Containerization eliminates this problem by bundling the application code together with the related
+            configuration files, libraries, and dependencies required for it to run. This single package of software or
+            “container” is abstracted away from the host operating system, and hence, it stands alone and becomes
+            portable—able to run across any platform or cloud, free of issues.</p>
+        <br>
+        <div class="d-flex justify-content-center">
+            <img src="images/containerengine.png" class="img-fluid" alt="Responsive image" width="1000" height="250">
+        </div>
+        <br>
+        <p class="container-fluid text-justify">Containers are often referred to as “lightweight,” meaning they share
+            the machine’s operating system kernel and do not require the overhead of associating an operating system
+            within each application. Containers are inherently smaller in capacity than a VM and require less start-up
+            time, allowing far more containers to run on the same compute capacity as a single VM. This drives higher
+            server efficiencies and, in turn, reduces server and licensing costs.</p>
+
+    </div>
+
+    <div class="container">
+        <h2 id="the-need-for-an-indestructible-network" class="text-center text-capitalize">Advantages and Drawbacks of
+            Containerization</h2>
+        <hr>
+        <div class="d-flex justify-content-center">
+            <img src="images/containeradv.png" class="img-fluid" alt="Responsive image" width="1000" height="250">
+        </div>
+        <br>
+    </div>
+
+</div>
+
+<footer class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <h4>Links</h4>
+                <ul>
+                    <li class="text-capitalize"><a href="../virtualization.html">Virtualization</a></li>
+                    <li class="text-capitalize"><a href="../containerization.html">Containerization</a></li>
+                    <li class="text-capitalize"><a href="#">How do they compare?</a></li>
+                    <li class="text-capitalize"><a href="#">Setup Web Server using Docker</a></li>
+                    <li class="text-capitalize"><a href="#">Linux Commands & Docker Basics</a></li>
+                    <li class="text-capitalize"><a href="#">How to connect Docker with Pycharm</a></li>
+                </ul>
+            </div>
+            <!-- Bootstrap core JavaScript -->
+            <script src="vendor/jquery/jquery.slim.min.js"></script>
+            <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
