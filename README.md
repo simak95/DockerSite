@@ -1,3 +1,3 @@
 # DockerSite
 
-Site: https://simak95.github.io/DockerSite/.
+Site: https://simak95.github.io/DockerSite/
