@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Linux Commands</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .column {
+         float: left;
+         width: 33.33%;
+         padding: 5px;
+        }
+
+    /* Clearfix (clear floats) */
+        .row::after {
+        content: "";
+        clear: both;
+        display: table;
+        }
+
+        .btn {
+        background-color: #2196F3;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        outline: none;
+        }
+
+        .dropdown {
+         position: absolute;
+         display: inline-block;
+        }
+
+        .dropdown-content {
+        display: none;
+        position: center;
+        background-color: #f1f1f1;
+        min-width: 160px;
+         z-index: 1;
+        }
+
+        .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+         text-decoration: none;
+         display: block;
+        }
+
+        .dropdown-content a:hover {background-color: #ddd}
+
+        .dropdown:hover .dropdown-content {
+        display: block;
+        }
+
+        .btn:hover, .dropdown:hover .btn {
+          background-color: #0b7dda;
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">Content</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="virtualization.html">Virtualization</a>
+                    <a class="dropdown-item" href="containerization.html">Containerization</a>
+                    <a class="dropdown-item" href="#">How do they compare?</a>
+                    <a class="dropdown-item" href="#">Setup Web Server using Docker</a>
+                    <a class="dropdown-item" href="#">Linux Commands & Docker Basic</a>
+                    <a class="dropdown-item" href="#">How to connect Docker with Pycharm</a>
+                </div>
+            </li>
+         <li class="nav-item">
+          <a class="nav-link" href="aboutus.html">About Us</a>
+        </li>
+      </ul>
+    </div>
+
+</nav>
+<br>
+<!-- Body -->
+ <h1 class="page-header bg- text-left text-dark jumbotron" $>Basic Linux Commands</h1>
+        <div class="container">
+            <h2 id="linux" class="text-left">What is Linux</h2>
+            <hr>
+            <p class="lead text-left">Linux is an opensource UNIX based operating systems based on the Linux Kernel.
+            Although most of the above Operating Systems come with a decent GUI, it is important to realize and
+                utilize the potential of the Command Line Tool. Commonly referred to as Linux Shell, the
+                command-line tool unveils access to new features that are not available through
+                Graphical User Interface (GUI). Open terminal and try these below commands out: </p>
+            <li>In Terminal, to view you current directory, type <kbd>pwd</kbd><br></li>
+            <li>To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br></li>
+            <li>To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd></li>
+            <li>To view the content of your current directory, type <kbd>ls</kbd> <br></li>
+            <li>To view more content of your current directory, type <kbd>ls -l</kbd>. This long listing
+                adds more information to the default <kbd>ls</kbd> output. <br></li>
+            <li>To view list of all files as wells as the hidden files or directories within the directory,
+                type <kbd>ls -a</kbd> <br></li>
+            <li>To create a new directory, type <kbd>mkdir directoryname</kbd> <br></li>
+            <li>To create directory within directory instead of typing <kbd>mkdir</kbd> multiple times,
+                you can type <kbd>mkdir -p dir1/dir2/dir3</kbd><br></li>
+            <li>To add a file to your directory, type <kbd>touch file1</kbd> <br></li>
+            <li>To use a text file editor called nano to create a new file <kbd>nano todo-list.txt</kbd> <br></li>
+            <li>To view the newly created file, type <kbd>cat todo-list.txt</kbd> <br></li>
+            <li>To view the type of file is in a directory, type <kbd>file name-txt.</kbd> <br></li>
+
+
+        </div>
+
+    <br>
+
+<!--Footer-->
+<footer class="text-center text-white" style="background-color: #45637d;">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Iframe -->
+    <section class="">
+      <div class="row d-flex justify-content-center">
+        <div class="col-lg-6">
+          <div class="ratio ratio-16x9">
+            <iframe
+              class="shadow-1-strong rounded"
+              src="https://www.youtube.com/embed/IGmfU6QU5dI"
+              title="YouTube video"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section: Iframe -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 Copyright:
+    <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<br><br><br><br><br><br>
+</body>
+</html>
