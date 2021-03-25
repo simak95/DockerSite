@@ -90,7 +90,7 @@
             </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="docs/aboutus.html">About Us</a>
+                <a class="nav-link" href="aboutus.html">About Us</a>
             </li>
         </ul>
     </div>
@@ -98,25 +98,25 @@
 
 <h1 class="page-header bg- text-left text-dark jumbotron" $>How to Connect Docker with Pycharm</h1>
         <div class="container">
-            <h2 id="the-founding-of-arpa" class="text-left">Step 1: Install and Run Docker</h2>
+            <h2 id="install" class="text-left">Step 1: Install and Run Docker</h2>
             <hr>
             <p class="lead text-left">I am using Mac OS for this project so all the instructions below will be
             Mac environment friendly. The gist of this is similar to other OS as well with few differences in terms
             and processes which can be easily found in the Docker site. Begin by going to the <a href="https://docs.docker.com/get-docker/">Docker</a>
                 site and install the software appropriate for your operating system. </p>
             <li>Double-click Docker.dmg to open the installer, then drag the Docker icon to the Applications folder.</li>
+             <figure class="text-center">
+                <img class="border rounded-left rounded-right" src="images/docker.png" alt="Docker" />
+            </figure>
             <li>Double-click Docker.app in the Applications folder to start Docker. The Docker menu in the top status
                 bar indicates that Docker Desktop is running, and accessible from a terminal.</li>
             <figure class="text-center">
-                <img class="border rounded-left" src="images/docker.png" alt="Docker" />
-            </figure>
-            <figure class="text-center">
-                <img class="border rounded-left" src="images/menubar.png" alt="Docker" />
+                <img class="border rounded-left rounded-right" src="images/menubar.png" alt="Docker" />
             </figure>
         </div>
 
         <div class="container">
-            <h2 id="the-founding-of-arpa" class="text-left text-capitalize">Step 2: Setup Pycharm</h2>
+            <h2 id="Pycharm" class="text-left text-capitalize">Step 2: Setup Pycharm</h2>
             <hr>
             <p class="lead text-left" >Once you've successfully installed Docker, start up Pycharm and go through
             initial configuration while making sure you are signed into your JetBrains account. </p>
@@ -134,21 +134,21 @@
             <li>Navigate to 'Add Configuration' and select the + button and choose Dockerfile under the Docker field.</li>
             <li>Add 'Barcode' as the Name and image tag and hit apply. Press Ok to exit.</li>
             <figure class="text-center">
-                <img class="border rounded-left" src="images/barcode.png" alt="Barcode" style="width:60%" />
+                <img class="border rounded-left rounded-right" src="images/barcode.png" alt="Barcode" style="width:60%" />
             </figure>
             <li>Set up a Docker Interpreter by navigating to the bottom right of your Pycharm window and select
             'Add Interpreter'</li>
              <figure class="text-center">
-                <img class="border rounded-left" src="images/Interpreter.png" alt="Interpreter" style="width:60%"/>
+                <img class="border rounded-left rounded-right" src="images/Interpreter.png" alt="Interpreter" style="width:60%"/>
             </figure>
             <li>Fill in the information as below image and hit Ok</li>
             <figure class="text-center">
-                <img class="border rounded-left" src="images/interpreter2.png" alt="Interpreter2" style="width:60%" />
+                <img class="border rounded-left rounded-right" src="images/interpreter2.png" alt="Interpreter2" style="width:60%" />
             </figure>
             <li>Now that everything is set, press the green Play button next to Barcode Configuration and see your code
             run with Docker in Pycharm!</li>
             <figure class="text-center">
-                <img class="border rounded-left" src="images/result.png" alt="Result" style="width:60%" />
+                <img class="border rounded-left rounded-right" src="images/result.png" alt="Result" style="width:60%" />
             </figure>
         </div>
 
