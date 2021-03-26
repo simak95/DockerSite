@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>What is Virtualization?</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">Content</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="virtualization.html">Virtualization</a>
+                        <a class="dropdown-item" href="containerization.html">Containerization</a>
+                        <a class="dropdown-item" href="Compare.html">How do they compare?</a>
+                        <a class="dropdown-item" href="Webserver.html">Setup Web Server using Docker</a>
+                        <a class="dropdown-item" href="LinuxCommands.html">Linux Commands & Docker Basics</a>
+                        <a class="dropdown-item" href="DockerPycharm.html">How to connect Docker with Pycharm</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Page Content -->
+
+<h1 class="page-header text-center text-dark jumbotron">Deploy a Web server on Docker</h1>
+
+<div class="container">
+    <div class="container">
+        <h2 id="container" class="text-center text-capitalize">Steps to deploy a simple Webserver with Docker on a Mac</h2>
+        <hr>
+        <p class="lead text-left">
+        <p class="container-fluid text-justify">Step 1: Make a directory</p>
+        <p class="container-fluid text-justify">- mkdir /test</p>
+        <p class="container-fluid text-justify">- cd /test</p>
+
+            <img src="images/build.png" class="img-fluid" alt="Responsive image" width="1000" height="250">
+        </div>
+        <br>
+        <p class="container-fluid text-justify"> </p>
+          
+    </div>
+
+<div class="container">
+    <div class="container">
+        <hr>
+        <p class="lead text-left">
+        <p class="container-fluid text-justify">Create a sample web page with name index.html</p>
+        <p class="container-fluid text-justify">- vim /test/index.html</p>
+        <p class="container-fluid text-justify">- insert this in the file</p>
+        <img src="images/index.png" class="img-fluid" alt="Responsive image" width="1000" height="250">
+        </div>
+        <br>
+
+          
+    </div>
+
+ <div class="container">
+    <div class="container">
+        <hr>
+        <p class="lead text-left">
+        <p class="container-fluid text-justify">Installing Nginx</p>
+        <p class="container-fluid text-justify">Type in docker run -d -P -v $HOME/test:/usr/share/nginx/html \
+        <p class="container-fluid text-justify">--name (name of folder) nginx</p>
+
+        <p class="container-fluid text-justify">This will install nginx which you would need for your Mac</p>
+        <img src="images/nginx.png" class="img-fluid" alt="Responsive image" width="1000" height="250">
+        </div>
+        <br>
+
+          
+    </div> 
+    
+     <div class="container">
+    <div class="container">
+        <hr>
+        <p class="lead text-left">
+        <p class="container-fluid text-justify">Check the webserver</p>
+        <p class="container-fluid text-justify">docker port test (Get's the port number)</p>
+        <p class="container-fluid text-justify">ipconfig getifaddr en0 (Get's the IP address)</p>
+
+        <p class="container-fluid text-justify">Then run type it in your browser for example: 142.23.02.2:80</p>
+        <img src="images/webserver.png" class="img-fluid" alt="Responsive image" width="1000" height="250">
+        </div>
+        <br>
+
+          
+    </div> 
+
+
+<footer class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <h4>Links</h4>
+                <ul>
+                    <li class="text-capitalize"><a href="virtualization.html">Virtualization</a></li>
+                    <li class="text-capitalize"><a href="containerization.html">Containerization</a></li>
+                    <li class="text-capitalize"><a href="Compare.html">How do they compare?</a></li>
+                    <li class="text-capitalize"><a href="Webserver.html">Setup Web Server using Docker</a></li>
+                    <li class="text-capitalize"><a href="LinuxCommands.html">Linux Commands & Docker Basics</a></li>
+                    <li class="text-capitalize"><a href="DockerPycharm.html">How to connect Docker with Pycharm</a></li>
+                </ul>
+            </div>
+            <!-- Bootstrap core JavaScript -->
+            <script src="vendor/jquery/jquery.slim.min.js"></script>
+            <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
