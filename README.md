@@ -6,11 +6,11 @@ Our site gives a basic overview of virtualization, containerization, Docker and 
 
 **Collaborators**
 <li>
-            <a href="https://github.com/simak95" class="text-dark">Sima's Github</a>
+            <a href="https://github.com/simak95" class="text-dark">Sima Kalam</a>
           </li>
           <li>
-            <a href="https://github.com/Yash0601" class="text-dark">Yash's Github</a>
+            <a href="https://github.com/Yash0601" class="text-dark">Yash Barad</a>
           </li>
           <li>
-            <a href="https://github.com/sk753" class="text-dark">Shahrukh's Github</a>
+            <a href="https://github.com/sk753" class="text-dark">Shahrukh Khan</a>
           </li>
